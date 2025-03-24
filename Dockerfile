@@ -1,7 +1,7 @@
 FROM python:3.11-slim
 
 # 작업 디렉토리 설정
-WORKDIR /app
+WORKDIR .
 
 # 의존성 복사 및 설치
 COPY requirements.txt ./
