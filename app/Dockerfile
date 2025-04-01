@@ -1,13 +1,13 @@
 FROM python:3.11-slim
 
-# 작업 디렉토리 설정
+# Set Working Directory
 WORKDIR .
 
-# 의존성 복사 및 설치
+# Install Dependency
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
-# 앱 소스 복사
+# Copy App source
 COPY . .
 
 # FastAPI 앱 실행 (Uvicorn 사용)
